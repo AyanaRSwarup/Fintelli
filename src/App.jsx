@@ -1,9 +1,14 @@
-function App() {
+import React from 'react'
+import Signup from './Signup'
+import { Routes, Route } from "react-router-dom"
+
+const App = () => {
   return (
-    <>
-      <h1>fintelli</h1>
-      <h2>router</h2>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Signup />} />
+      </Routes>
+    </div>
   )
 }
 
