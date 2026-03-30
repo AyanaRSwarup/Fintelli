@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function FourZeroFour() {
+export default function FiveZeroFive() {
   const navigate = useNavigate();
 
   return (
@@ -97,3 +97,4 @@ export default function FourZeroFour() {
     </div>
   );
 }
+
