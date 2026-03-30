@@ -66,11 +66,11 @@ const Onboarding = () => {
     if (result.success) {
       navigate("/dashboard");
     } else {
-      navigate("/error");
+      navigate("/error505");
     }
 } catch (error) {
   console.error("Error during onboarding:", error);
-  navigate("/error");
+  navigate("/error404");
 }
   };
 
