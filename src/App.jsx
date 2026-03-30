@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom"
 import Onboarding from './pages/Onboarding.jsx'
 import FiveZeroFive from './pages/Error.jsx'
 import ProtectedRoute from './context/ProfileContext.jsx'
+import SideBar from './components/SideBar.jsx'
+import Debt from './pages/Debt.jsx'
 
 const App = () => {
   return (
@@ -11,10 +13,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Signup />} />
         <Route path="/onboarding" element={
-          <ProtectedRoute>
-            <Onboarding />
-          </ProtectedRoute>
-        } />
+            <ProtectedRoute>
+              <Onboarding />
+            </ProtectedRoute>
+          } />
+        <Route element={<SideBar />}> 
+          <Route path="/debts" element={<Debt />} />
+        </Route>
         <Route path="/error505" element={<FiveZeroFive />} />
       </Routes>
     </div>

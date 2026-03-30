@@ -4,10 +4,13 @@ import { Navigate } from "react-router-dom";
 export const ProfileContext = createContext(null);
 
 export function ProfileProvider({ children }) {
+  console.log("ProfileProvider rendering")
   const [profile, setProfile] = useState(null); 
   const [loading, setLoading] = useState(true);
+  console.log("ProfileProvider mounted")
 
   useEffect(() => {
+    console.log("useEffect fired")
     async function fetchProfile() {
       try {
         const res = await fetch(
