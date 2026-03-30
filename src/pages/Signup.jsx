@@ -7,9 +7,9 @@ export default function Login() {
   };
   return (
     <div className="flex flex-col md:flex-row min-h-screen font-sans">
-      {/* LEFT PANEL */}
+     
       <div className="relative flex flex-col md:flex-[0_0_50%] bg-linear-to-br from-[#0a1628] via-[#3D456A]  to-[#0a1e38] md:px-20 py-8 px-8 overflow-hidden text-white">
-        {/* Logo */}
+        
         <div className="relative z-10 flex items-center gap-2.5">
           <div className="w-9 h-9 rounded-[9px] bg-[#20d2b4] flex items-center justify-center">
             <TrendingUp size={18} color="#0d1b2a" strokeWidth={2.5} />
@@ -19,7 +19,7 @@ export default function Login() {
           </a>
         </div>
 
-        {/* Hero */}
+        
         <div className="relative z-10 flex flex-col justify-center flex-1 py-10 md:py-0">
           <h1 className="font-family: var(--font-sans) text-4xl md:text-[3.5rem] font-bold leading-tight  mb-4">
             Take control of your financial future
@@ -30,7 +30,7 @@ export default function Login() {
           </p>
         </div>
 
-        {/* Badges */}
+       
         <div className="relative z-10 flex flex-row flex-wrap md:flex-col gap-2.5 pb-2">
           {[
             {
@@ -53,7 +53,7 @@ export default function Login() {
         </div>
       </div>
 
-      {/* RIGHT PANEL */}
+      
       <div className="flex flex-1 items-center justify-center bg-[#f8f9fb]  px-6 md:px-8 py-12">
         <div className="w-full max-w-105">
           <span className="inline-block text-[11px] font-bold tracking-[1.2px] text-[#20a89a] uppercase mb-3.5 bg-[#EFEFFF] px-2 py-1 rounded-full">
