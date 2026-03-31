@@ -1,6 +1,6 @@
 import React from 'react'
 import { BookText, HandCoins, BanknoteArrowDown, ChartNoAxesCombined, Settings, Menu } from 'lucide-react'
-import { useLocation } from 'react-router-dom';
+import { useLocation, Outlet } from 'react-router-dom';
 
 const SideBar = () => {
     const location = useLocation();
@@ -45,6 +45,9 @@ const SideBar = () => {
         </div>
         <div className={`inset-0 bg-black/50 transition-all duration-300 ${isOpen ? "fixed" : "hidden"}`} onClick={()=>{setIsOpen(false)}}>
 
+        </div>
+        <div className='md:ml-70'>  {/* same margin as navbar */}
+            <Outlet />
         </div>
     </div>
     </>
