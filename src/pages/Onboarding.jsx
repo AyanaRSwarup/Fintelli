@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Loading from "../components/Loading";
 
 const Onboarding = () => {
   const [income, setIncome] = useState("");
@@ -9,6 +10,7 @@ const Onboarding = () => {
   const [option, setOption] = useState(5);
   const [emergencyFund, setEmergencyFund] = useState("");
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   const options = [
     { value: 5, label: "Conservative" },
     { value: 8, label: "Moderate" },
@@ -41,6 +43,7 @@ const Onboarding = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     const data = {
       monthlyIncome: income,
       monthlyNeeds: fixedExpenses,
@@ -73,6 +76,10 @@ const Onboarding = () => {
   navigate("/error404");
 }
   };
+
+  if(loading){
+    return <Loading/>
+  }
 
   return (
     <>
