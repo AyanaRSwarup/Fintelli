@@ -1,50 +1,24 @@
 {
-  "status": 200,
-  "message": "Successfully calculated dashboard data",
   "success": true,
+  "message": "Succesfully calculated dashboard data",
   "data": {
-    "monthlyIncome": 50000,
-    "discretionaryIncome": 25000,
-    "expenseRatio": 0.75,
-
-    "needs": 25000,
-    "wants": 13500,
-
-    "maxNeeds": 25000,
-    "maxWants": 15000,
-
-    "savings": 11500,
-    "targetSavings": 10000,
-
+    "monthlyIncome": 75000,
+    "discretionaryIncome": 30000,
+    "expenseRatio": 0.60,
     "emergencyFund": 45000,
-    "targetEmergencyFund": 150000,
+    "targetEmergencyFund": 180000,
+    "savings": 10000,
+    "targetSavings": 15000,
+    "needs": 30000,
+    "wants": 15000,
+    "maxNeeds": 37500,
+    "maxWants": 22500,
+    "totalOutstandingDebt": 220000,
 
-    "healthScore": 74,
-
-    "debt": {
-      "totalDebt": 170000,
-      "monthsRemaining": 8
-    },
-
-    "incomeAllocation": {
-      "ideal": {
-        "needs": 50,
-        "wants": 30,
-        "savings": 20
-      },
-      "current": {
-        "needs": 58,
-        "wants": 27,
-        "savings": 15
-      }
-    },
-
-    "monthlySavingsTrend": [
-      { "month": "Nov", "amount": 9000 },
-      { "month": "Dec", "amount": 8500 },
-      { "month": "Jan", "amount": 11000 },
-      { "month": "Feb", "amount": 7800 },
-      { "month": "Mar", "amount": 12800 }
-    ]
+    "expenseScore": 40.0,
+    "emergencyScore": 25.0,
+    "savingsScore": 66.7,
+    "debtScore": 69.4,
+    "healthScore": 51.5
   }
 }

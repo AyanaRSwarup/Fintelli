@@ -35,10 +35,7 @@ const EmergencyFundCard = ({
         <span className="text-[10px] text-[#6E7889]">3 MO</span>
       </div>
 
-      <div className="flex items-start gap-2 bg-slate-50 border border-slate-100 rounded-xl px-3 py-2.5">
-        <span className="w-2 h-2 rounded-full bg-[#006B58] mt-1 shrink-0" />
-        <p className="text-xs font-medium text-[#6E7889] leading-relaxed">{tip}</p>
-      </div>
+      
 
     </div>
   )

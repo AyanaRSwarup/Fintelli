@@ -27,7 +27,7 @@ const MonthlySavingsCard = ({
           <p className="text-xs font-medium text-[#6E7889] mt-0.5">Net capital added to wealth</p>
         </div>
         <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#FFEEDD] text-[#A46B00] tracking-wider">
-          STEADY GROWTH
+          {isPositive ? 'STEADY GROWTH' : 'UNSTABLE GROWTH'}
         </span>
       </div>
 
