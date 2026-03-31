@@ -1,0 +1,50 @@
+{
+  "status": 200,
+  "message": "Successfully calculated dashboard data",
+  "success": true,
+  "data": {
+    "monthlyIncome": 50000,
+    "discretionaryIncome": 25000,
+    "expenseRatio": 0.75,
+
+    "needs": 25000,
+    "wants": 13500,
+
+    "maxNeeds": 25000,
+    "maxWants": 15000,
+
+    "savings": 11500,
+    "targetSavings": 10000,
+
+    "emergencyFund": 45000,
+    "targetEmergencyFund": 150000,
+
+    "healthScore": 74,
+
+    "debt": {
+      "totalDebt": 170000,
+      "monthsRemaining": 8
+    },
+
+    "incomeAllocation": {
+      "ideal": {
+        "needs": 50,
+        "wants": 30,
+        "savings": 20
+      },
+      "current": {
+        "needs": 58,
+        "wants": 27,
+        "savings": 15
+      }
+    },
+
+    "monthlySavingsTrend": [
+      { "month": "Nov", "amount": 9000 },
+      { "month": "Dec", "amount": 8500 },
+      { "month": "Jan", "amount": 11000 },
+      { "month": "Feb", "amount": 7800 },
+      { "month": "Mar", "amount": 12800 }
+    ]
+  }
+}
