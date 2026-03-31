@@ -9,7 +9,7 @@ const Debt = () => {
   const navigate = useNavigate();
   const [debts, setDebts] = useState(null);
 
-  const USE_MOCK = true; // flip to false when backend is ready
+  const USE_MOCK = false; // flip to false when backend is ready
 
   useEffect(() => {
     const fetchData = async () => {
@@ -43,7 +43,7 @@ const Debt = () => {
     }
     else{
       return(
-        <div className="bg-[#F9F9FF] h-screen">
+        <div className="bg-[#F9F9FF] min-h-screen">
           <div className="flex justify-between pt-15 pb-4 px-10 items-center">
             <h1 className="sm:text-2xl text-xl font-bold tracking-tighter text-black">Your Active Accounts</h1>
             <p className="sm:text-lg text-md text-[#006B58] font-bold">{debts.data.newDebts.length} Active Loans</p>

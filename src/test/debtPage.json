@@ -12,7 +12,8 @@
         "interest_rate": 8.5,
         "tenure": 20,
         "emi": 4340,
-        "totalInterest": 541600
+        "totalInterest": 541600,
+        "created_at": "2024-11-15T08:30:00.000Z"
       },
       {
         "uid": "user-123",
@@ -22,7 +23,8 @@
         "interest_rate": 36,
         "tenure": 2.5,
         "emi": 2100,
-        "totalInterest": 13000
+        "totalInterest": 13000,
+        "created_at": "2024-11-15T08:30:00.000Z"
       }
     ],
     "discretionaryIncome": 25000,
