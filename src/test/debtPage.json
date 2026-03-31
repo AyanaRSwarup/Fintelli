@@ -1,0 +1,42 @@
+{
+  "statusCode": 200,
+  "message": "Successful",
+  "success": true,
+  "data": {
+    "newDebts": [
+      {
+        "uid": "user-123",
+        "debt_type": "fixed",
+        "name": "Home Loan",
+        "principal": 5000000,
+        "interest_rate": 8.5,
+        "tenure": 20,
+        "emi": 4340,
+        "totalInterest": 541600
+      },
+      {
+        "uid": "user-123",
+        "debt_type": "flexible",
+        "name": "Credit Card",
+        "principal": 50000,
+        "interest_rate": 36,
+        "tenure": 2.5,
+        "emi": 2100,
+        "totalInterest": 13000
+      }
+    ],
+    "discretionaryIncome": 25000,
+    "minEMI": 6440,
+    "freeCapital": 18560,
+    "avalanche": {
+      "months": 28,
+      "order": ["Credit Card", "Home Loan"],
+      "totalInterestSaved": 8200
+    },
+    "snowball": {
+      "months": 31,
+      "order": ["Credit Card", "Home Loan"],
+      "totalInterestSaved": 5100
+    }
+  }
+}

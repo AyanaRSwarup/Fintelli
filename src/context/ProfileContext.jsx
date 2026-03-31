@@ -1,13 +1,17 @@
 import { useContext, createContext, useState, useEffect} from "react";
 import { Navigate } from "react-router-dom";
+import Loading from "../components/Loading";
 
 export const ProfileContext = createContext(null);
 
 export function ProfileProvider({ children }) {
+  console.log("ProfileProvider rendering")
   const [profile, setProfile] = useState(null); 
   const [loading, setLoading] = useState(true);
+  console.log("ProfileProvider mounted")
 
   useEffect(() => {
+    console.log("useEffect fired")
     async function fetchProfile() {
       try {
         const res = await fetch(
@@ -53,7 +57,7 @@ export default function ProtectedRoute({ children }) {
   const { profile, loading } = useProfile();
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   if (!profile) {  
