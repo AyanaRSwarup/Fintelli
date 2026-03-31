@@ -9,7 +9,7 @@ const SideBar = () => {
   return (
     <>
     <div >
-        <div className={`bg-secondary z-10 w-70 h-screen fixed left-0 top-0 px-6 py-10 flex-col items-center gap-10 transition-transform duration-300 md:translate-x-0 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
+        <div className={`bg-secondary z-10 w-70 h-screen fixed left-0 top-0 px-6 py-10 flex-col items-center gap-10 transition-transform duration-300 lg:translate-x-0 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
             <div>
                 <h1 className='text-3xl text-white tracking-tighter'>Fintelli</h1>
                 <p className='text-primary tracking-widest text-sm'>WEALTH MANAGEMENT</p>
@@ -38,15 +38,15 @@ const SideBar = () => {
             </div>
             
         </div>
-        <div className='bg-white shadow-md h-15 md:ml-70 '>
-            <button className='pt-5 pl-5 md:hidden' onClick={() => setIsOpen(true)}>
+        <div className='bg-white shadow-md h-15 lg:ml-70 '>
+            <button className='pt-5 pl-5 lg:hidden' onClick={() => setIsOpen(true)}>
                 <Menu />
             </button>
         </div>
         <div className={`inset-0 bg-black/50 transition-all duration-300 ${isOpen ? "fixed" : "hidden"}`} onClick={()=>{setIsOpen(false)}}>
 
         </div>
-        <div className='md:ml-70'>  {/* same margin as navbar */}
+        <div className='lg:ml-70'>  {/* same margin as navbar */}
             <Outlet />
         </div>
     </div>
