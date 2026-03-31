@@ -6,6 +6,7 @@ import FiveZeroFive from './pages/Error.jsx'
 import ProtectedRoute from './context/ProfileContext.jsx'
 import SideBar from './components/SideBar.jsx'
 import Debt from './pages/Debt.jsx'
+import Dashboard from './pages/Dashboard.jsx'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           } />
         <Route element={<SideBar />}> 
           <Route path="/debts" element={<Debt />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Route>
         <Route path="/error505" element={<FiveZeroFive />} />
       </Routes>
