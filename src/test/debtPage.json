@@ -1,44 +1,46 @@
 {
-  "statusCode": 200,
-  "message": "Successful",
-  "success": true,
-  "data": {
-    "newDebts": [
-      {
-        "uid": "user-123",
-        "debt_type": "fixed",
-        "name": "Home Loan",
-        "principal": 5000000,
-        "interest_rate": 8.5,
-        "tenure": 20,
-        "emi": 4340,
-        "totalInterest": 541600,
-        "created_at": "2024-11-15T08:30:00.000Z"
-      },
-      {
-        "uid": "user-123",
-        "debt_type": "flexible",
-        "name": "Credit Card",
-        "principal": 50000,
-        "interest_rate": 36,
-        "tenure": 2.5,
-        "emi": 2100,
-        "totalInterest": 13000,
-        "created_at": "2024-11-15T08:30:00.000Z"
-      }
-    ],
-    "discretionaryIncome": 25000,
-    "minEMI": 6440,
-    "freeCapital": 18560,
-    "avalanche": {
-      "months": 28,
-      "order": ["Credit Card", "Home Loan"],
-      "totalInterestSaved": 8200
-    },
-    "snowball": {
-      "months": 31,
-      "order": ["Credit Card", "Home Loan"],
-      "totalInterestSaved": 5100
+    "statusCode": 200,
+    "message": "Successful",
+    "success": true,
+    "data": {
+        "newDebts": [
+            {
+                "id": "4",
+                "uid": "101179884359405625352",
+                "debt_name": "HDFC Credit Card",
+                "principle": "75000",
+                "outstanding": "50000",
+                "annualinterest": "24",
+                "tenure": 1,
+                "emi": "5000",
+                "created_at": "2026-02-27T21:49:27.914Z",
+                "debt_type": "flexible",
+                "totalInterest": 6351.641087490936
+            },
+            {
+                "id": "5",
+                "uid": "101179884359405625352",
+                "debt_name": "Bajaj Personal Loan",
+                "principle": "300000",
+                "outstanding": "280000",
+                "annualinterest": "14",
+                "tenure": "4",
+                "emi": 7651.413418613112,
+                "created_at": "2026-02-27T22:25:21.375Z",
+                "debt_type": "fixed",
+                "totalInterest": 87267.84409342939
+            }
+        ],
+        "discretionaryIncome": 80000,
+        "minEMI": 12651.413418613112,
+        "freeCapital": 67348.58658138689,
+        "avalanche": {
+            "total_months": 5,
+            "total_interest": 12065
+        },
+        "snowball": {
+            "total_months": 5,
+            "total_interest": 12065
+        }
     }
-  }
 }
