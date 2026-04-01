@@ -7,10 +7,12 @@ import ProtectedRoute from './context/ProfileContext.jsx'
 import SideBar from './components/SideBar.jsx'
 import Debt from './pages/Debt.jsx'
 import Dashboard from './pages/Dashboard.jsx'
+import { Toaster } from 'react-hot-toast';
 
 const App = () => {
   return (
     <div>
+      <Toaster position="bottom-right" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<Signup />} />
         <Route path="/onboarding" element={
